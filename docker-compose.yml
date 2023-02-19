@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  zomboidserver:
+    image: ghcr.io/woosuk-choi-g/zomboidserver:latest
+    ports:
+      - 16261:16261/udp
+      - 16262:16262/udp
+      - 27015:27015
+    volumes:
+      - ./:/root/Zomboid
